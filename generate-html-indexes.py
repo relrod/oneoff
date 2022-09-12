@@ -53,7 +53,7 @@ class IndexedFile:
         return self.name == other.name
 
     def __str__(self):
-        return self.name
+        return self.name + ("/" if self.is_dir else "")
 
 
 subdirs_to_files = {}
